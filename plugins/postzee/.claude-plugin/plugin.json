@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Generate AI images/videos and post to 30+ social media platforms with Postzee",
   "homepage": "https://postzee.app",
-  "author": "Zee Labs LLC",
+  "author": {
+    "name": "Zee Labs LLC",
+    "email": "support@postzee.app"
+  },
   "license": "MIT",
   "keywords": ["social-media", "ai", "image-generation", "video-generation", "scheduling", "instagram", "linkedin", "tiktok", "twitter"],
   "userConfig": {

@@ -1,16 +1,16 @@
 {
-  "name": "Zee Labs Plugins",
+  "name": "zee-labs-plugins",
   "description": "Official plugins by Zee Labs — Postzee social media automation",
+  "owner": {
+    "name": "Zee Labs LLC",
+    "url": "https://postzee.app"
+  },
   "plugins": [
     {
       "name": "postzee",
       "description": "Generate AI images/videos and post to 30+ social media platforms with Postzee",
       "version": "1.0.0",
-      "homepage": "https://postzee.app",
-      "source": {
-        "type": "path",
-        "path": "."
-      }
+      "homepage": "https://postzee.app"
     }
   ]
 }

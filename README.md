@@ -5,7 +5,11 @@ Generate AI images and videos, then post them to 30+ social media platforms — 
 ## Installation
 
 ```bash
-claude plugin install github:Zee-Labs/postzee-claude-plugin
+# 1. Add the marketplace (one time)
+/plugin marketplace add Zee-Labs/postzee-claude-plugin
+
+# 2. Install the plugin
+/plugin install postzee@zee-labs-postzee-claude-plugin
 ```
 
 On first use, you'll be prompted for your **Postzee API key** (stored securely in your system keychain).

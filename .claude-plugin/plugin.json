@@ -1,0 +1,17 @@
+{
+  "name": "postzee",
+  "version": "1.0.0",
+  "description": "Generate AI images/videos and post to 30+ social media platforms with Postzee",
+  "homepage": "https://postzee.app",
+  "author": "Zee Labs LLC",
+  "license": "MIT",
+  "keywords": ["social-media", "ai", "image-generation", "video-generation", "scheduling", "instagram", "linkedin", "tiktok", "twitter"],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Postzee API Key",
+      "description": "Your Postzee API key. Get it at https://app.postzee.app → Settings → API",
+      "sensitive": true
+    }
+  }
+}

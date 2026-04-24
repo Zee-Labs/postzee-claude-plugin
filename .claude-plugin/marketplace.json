@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "zee-labs-plugins",
   "version": "1.0.0",
   "description": "Official plugins by Zee Labs — Postzee social media automation",
@@ -15,7 +16,7 @@
         "name": "Zee Labs LLC",
         "email": "support@postzee.app"
       },
-      "source": ".",
+      "source": "./plugins/postzee",
       "category": "productivity"
     }
   ]

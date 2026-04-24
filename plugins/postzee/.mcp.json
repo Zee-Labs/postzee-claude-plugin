@@ -1,6 +1,6 @@
 {
   "postzee": {
-    "type": "sse",
-    "url": "https://api.postzee.app/mcp/${user_config.api_key}/sse"
+    "type": "http",
+    "url": "https://api.postzee.app/mcp/${user_config.api_key}/messages"
   }
 }

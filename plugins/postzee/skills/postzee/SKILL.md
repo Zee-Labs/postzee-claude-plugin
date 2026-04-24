@@ -39,9 +39,9 @@ Works for posts with or without media:
 1. **List channels** — call `POSTZEE_LIST_CHANNELS`. Show connected accounts grouped by platform. If none are connected, direct the user to https://app.postzee.app/channels
 2. **Ask which channel(s)** — let the user choose one or more.
 3. **Create the post** — call `POSTZEE_CREATE_POST` for **each** selected channel (one call per channel). The same media can be attached to multiple channels.
-   - Immediate posting: `type: "schedule"` with current UTC datetime
-   - Scheduled: ask for date/time, convert to UTC
-   - Draft: `type: "draft"`
+   - Immediate posting: use `type: "now"` (no date needed — publishes immediately). **Always use "now" when the user says "post" or "publish" without specifying a date.**
+   - Scheduled: use `type: "schedule"` with `date` in UTC (ask user for date/time, convert to UTC)
+   - Draft: use `type: "draft"`
 
 ### Multi-channel posting tips
 - When posting to multiple channels, call `POSTZEE_CREATE_POST` once per channel with the same content.

@@ -13,7 +13,7 @@
     "api_key": {
       "type": "string",
       "title": "Postzee API Key",
-      "description": "Your Postzee API key. Get it at https://app.postzee.app → Settings → API",
+      "description": "Your Postzee API Key (NOT the MCP URL). Get it at dashboard.postzee.app → Settings → Public API → click Reveal",
       "sensitive": true
     }
   }

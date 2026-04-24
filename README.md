@@ -1,57 +1,72 @@
-# Postzee Plugin
+# Postzee Plugin for Claude Code
 
 Generate AI images and videos, then post them to 30+ social media platforms — all from your AI agent.
 
 ## Installation
 
-```bash
-# 1. Add the marketplace (one time)
-/plugin marketplace add Zee-Labs/postzee-claude-plugin
+Open Claude Code and run:
 
-# 2. Install the plugin
-/plugin install postzee@zee-labs-postzee-claude-plugin
+```
+/plugin marketplace add Zee-Labs/postzee-claude-plugin
+/plugin install postzee@zee-labs-plugins
 ```
 
-On first use, you'll be prompted for your **Postzee API key** (stored securely in your system keychain).
+On first use, you'll be prompted for your **Postzee API Key** (stored securely in your system keychain).
 
-Get your API key at: [app.postzee.app](https://app.postzee.app) → Settings → API
+## Where to find your API Key
+
+1. Go to [dashboard.postzee.app/settings/account/api](https://dashboard.postzee.app/settings/account/api/)
+2. Navigate to **Settings** → **Public API** tab
+3. Copy the **API Key** (the first field, labeled "Public API" — click "Reveal" to see the full key)
+
+> **Important:** Copy only the API Key (starts with a hash like `0f192e...`), NOT the MCP URL below it. The plugin handles the MCP connection automatically.
 
 ## What You Can Do
 
-- **"Generate an image of a sunset over the ocean"** — creates a stunning AI image with optimized prompt
+Just talk naturally:
+
+- **"Generate an image of a cat surfing at sunset"** — creates a stunning AI image with auto-optimized prompt
 - **"Create a video of coffee being poured in slow motion"** — generates an AI video
 - **"Post this to my Instagram and LinkedIn"** — publishes to your connected channels
 - **"How many credits do I have?"** — checks your balance
 - **"What image models are available?"** — lists models with costs
 - **"Schedule a post for tomorrow at 3pm"** — schedules content for later
+- **"Generate and post to TikTok"** — full flow in one command (auto-selects 9:16 vertical)
 
-## Available Tools
+## How It Works
 
-| Tool | Description |
-|------|-------------|
-| `POSTZEE_LIST_CHANNELS` | List connected social media channels |
-| `POSTZEE_GET_CREDITS` | Check AI credit balance |
-| `POSTZEE_LIST_IMAGE_MODELS` | List available image models with costs |
-| `POSTZEE_LIST_VIDEO_MODELS` | List available video models with costs |
-| `POSTZEE_ENHANCE_PROMPT` | Optimize prompts for better results |
-| `POSTZEE_GENERATE_IMAGE` | Generate an AI image |
-| `POSTZEE_GENERATE_VIDEO` | Generate an AI video |
-| `POSTZEE_CHECK_JOB` | Check generation status |
-| `POSTZEE_CREATE_POST` | Create or schedule a post |
+1. You describe what you want (image, video, or post)
+2. The agent automatically optimizes your prompt for professional results
+3. Generates the media using AI (10-60 seconds)
+4. Asks if you want to post to social media
+5. Publishes to your connected channels
 
 ## Requirements
 
-- [Postzee](https://postzee.app) account with API key
-- AI credits for image/video generation
-- At least one social media channel connected in the dashboard
+- A [Postzee](https://postzee.app) account (free or paid)
+- AI credits for image/video generation (check balance with "how many credits do I have?")
+- At least one social media channel connected at [dashboard.postzee.app/launches](https://dashboard.postzee.app/launches)
 
 ## Supported Platforms
 
 Instagram, Facebook, LinkedIn, X (Twitter), TikTok, YouTube, Pinterest, Threads, Bluesky, Mastodon, Discord, Slack, Telegram, Reddit, and 15+ more.
 
+## Troubleshooting
+
+**"MCP server failed to connect"**
+- Make sure you entered the **API Key**, not the MCP URL
+- Verify the key at [dashboard.postzee.app/settings/account/api](https://dashboard.postzee.app/settings/account/api/)
+- Try `/reload-plugins` to reconnect
+
+**"Insufficient credits"**
+- Purchase more at [dashboard.postzee.app/credits](https://dashboard.postzee.app/credits)
+
+**"No channels connected"**
+- Connect your social accounts at [dashboard.postzee.app/launches](https://dashboard.postzee.app/launches)
+
 ## Links
 
-- [Postzee](https://postzee.app)
-- [Dashboard](https://app.postzee.app)
-- [Support](mailto:support@postzee.app)
-- [API Documentation](https://postzee.app/docs)
+- [Postzee](https://postzee.app) — Platform
+- [Dashboard](https://dashboard.postzee.app) — Your account
+- [API Key](https://dashboard.postzee.app/settings/account/api/) — Get your key
+- [Support](mailto:support@postzee.app) — Help
